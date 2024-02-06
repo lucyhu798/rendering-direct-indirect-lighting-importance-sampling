@@ -1,0 +1,17 @@
+size 640 480
+integrator pathtracer
+spp 64
+#gamma 2.2
+importancesampling brdf
+evmap /Users/lucyhu/Desktop/CSE-168/scenes/hw4/christmas_photo_studio_01_4k.hdr
+#evmap /home/polaris/Desktop/CSE100/CSE168/CSE168-HW2/CSE-168/scenes/hw4/christmas_photo_studio_01_4k.hdr
+nexteventestimation off
+russianroulette on
+camera  0 2 15  0 -3 2.5  0 1 0  13
+output circle.png
+
+mirror on 
+diffuse 0 0 0
+specular 0.9 0.2 0.07
+roughness 0.05
+sphere 0 -1 7.5 0.8
